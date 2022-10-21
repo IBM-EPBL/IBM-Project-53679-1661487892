@@ -1,0 +1,37 @@
+import random
+
+def temperature():
+    value=random.randint(20,100)
+    return value
+
+t=temperature()
+
+def pressure():
+    value=random.randint(10,90)
+    return value
+
+p=pressure()
+
+def humidity():
+    range=random.randint(40,100)
+    return range
+
+h=humidity()
+
+print('Temp={0:0.1f}*C Humidity={1:0.1f}%'.format(t,h))
+
+#TEMPERATURE
+if t>30:
+    print(t,"Deg C -- High temperature is detetcted")
+elif t==30:
+    print(t,"Deg C -- Temprature reached maximum thershold  of 30 degrees celsius")
+else:
+    print(t,"Deg C -- Temperature is good")
+
+#HUMIDITY
+if h>65 :
+    print(h,"% -- High humidity detetcted")
+elif h == 65:
+    print(h,"% -- Humidity reached maximum thershold of 65 percent")
+else:
+    print(h,"% -- Humidity is good")
